@@ -9,3 +9,5 @@ function dispararAlert (){
     }
 }
 btnEntrar.addEventListener('click', dispararAlert);
+
+let header = document
