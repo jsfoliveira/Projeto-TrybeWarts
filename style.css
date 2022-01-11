@@ -1,10 +1,9 @@
-header {
+.header {
     display: flex;
-    
     background-color: rgb(50, 167, 145);
     }
     
-    .trybewarts-login {
+  /*   .trybewarts-login {
     display: flex;
     
     } 
@@ -12,3 +11,4 @@ header {
 .flex {
     display: flex;
 }
+ */
