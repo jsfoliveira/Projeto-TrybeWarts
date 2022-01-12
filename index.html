@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Projeto Trybewarts</title>
 </head>
 
 <body>
@@ -38,30 +38,64 @@
                     <option id="pytherina-house" value="Pytherina">Pytherina</option>
                 </select>
             </section>
-            <label id="label-family">
-                Qual sua família?
-            </label>
-            <label>Família Frontend<input type="radio" name="family" value="Frontend"></label>
-            <label>Família Backend<input type="radio" name="family" value="Backend"></label>
-            <label>Família FullStack<input type="radio" name="family" value="FullStack"></label>
+            <section class="familia">
+                <label for="family" id="label-family">Qual sua família?</label>
+                <input type="radio" name="family" value="Frontend" id="frontend">Frontend
+                <input type="radio" name="family" value="Backend" id="backend">Backend
+                <input type="radio" name="family" value="FullStack" id="fullstack">Fullstack
+              </section>
             <label id="label-content">
                 Qual conteúdo você está com mais vontade de aprender?
             </label>
-            <label>HoFs<input type='checkbox' value="HoFs"></label>
-            <label>Jest<input type='checkbox' value="Jest"></label>
-            <label>Promises<input type='checkbox' value="Promises"></label>
-            <label>React<input type='checkbox' value="React"></label>
-            <label>SQL<input type='checkbox' value="SQL"></label>
-            <label>Python<input type='checkbox' value="Python"></label>
+            <label>HoFs
+                <input type='checkbox' value="HoFs">
+            </label>
+            <label>Jest
+                <input type='checkbox' value="Jest">
+            </label>
+            <label>Promises
+                <input type='checkbox' value="Promises">
+            </label>
+            <label>React
+                <input type='checkbox' value="React">
+            </label>
+            <label>SQL
+                <input type='checkbox' value="SQL">
+            </label>
+            <label>Python
+                <input type='checkbox' value="Python">
+            </label>
+            <section class="avaliacao">
+                <label id="label-rate">Como você avalia a Trybewarts?
+                </label>
+                    <input type="radio" name="rate" value="1">1
+                    <input type="radio" name="rate" value="2">2
+                    <input type="radio" name="rate" value="3">3
+                    <input type="radio" name="rate" value="4">4
+                    <input type="radio" name="rate" value="5">5
+                    <input type="radio" name="rate" value="6">6
+                    <input type="radio" name="rate" value="7">7
+                    <input type="radio" name="rate" value="8">8
+                    <input type="radio" name="rate" value="9">9
+                    <input type="radio" name="rate" value="10">10
+            </section>
+            <label for="textarea" class="textarea">Deixe seu comentário:
+            </label>
+                <textarea id="textarea" maxlength="500">
+
+                </textarea>
+            
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
-    <label id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" id="agreement"></label>
-    <p><button type="submit" id="submit-btn">Enviar</button></p>
+    <label for="agreement" id="label-infos">Você concorda com o uso das informações acima? 
+        <input type="checkbox" name="agreement" id="agreement">
+    </label>
+    <p><button type="submit" id="submit-btn" disabled>Enviar</button></p>
     <footer>
-        <h5> "Direitos reservados à Trybewarts©" </h5>
+        <h5>"Direitos reservados à Trybewarts©"</h5>
     </footer>
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
