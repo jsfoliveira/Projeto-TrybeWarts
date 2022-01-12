@@ -25,11 +25,42 @@
     </header>
     <main class="flex">
         <form id="evaluation-form" class="flex">
-
-
-            
+                <section class="customiza-section">
+                    <input type="text" name="nome" id="input-name" placeholder="Nome">
+                    <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+                </section>
+                <section class="customiza-section">
+                    <input type="email" name="email" id="input-email" placeholder="Email">
+                    <select id="house">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </section>
+                <label id="label-family">
+                Qual sua família? 
+                 <input> 
+                </label>
+                <label>Frontend<input type="radio" name="family" value="Frontend"></label>
+                <label>Backend<input type="radio" name="family" value="Backend"></label>
+                <label>FullStack<input type="radio" name="family" value="FullStack"></label>
+                <label id="label-content">
+                    Qual conteúdo você está com mais vontade de aprender?
+                </label>
+                <label>HoFs<input type='checkbox' value="HoFs"></label>
+                <label>Jest<input type='checkbox' value="Jest"></label>
+                <label>Promises<input type='checkbox' value="Promises"></label>
+                <label>React<input type='checkbox' value="React"></label>
+                <label>SQL<input type='checkbox' value="SQL"></label>
+                <label>Python<input type='checkbox' value="Python"></label>
         </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
+    <button type="submit" id="submit-btn">Enviar</button>
+    <footer>
+        <h5> "Direitos reservados à Trybewarts©" </h5>
+    </footer>
     <script src="script.js"> </script>
 </body>
 
