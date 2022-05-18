@@ -1,11 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   background-color: rgb(50, 167, 145);
 }
 
-.trybewarts-login {
-  display: flex;
+.trybewarts-header-logo {
+  width: 200px;
+  margin: 10px;
+}
 
+.trybewarts-login {
+  margin: 60px 20px;
+}
+
+.btnEntrar {
+  margin-top: 10px;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  background-color: rgb(84, 26, 74);
+  color: white
+}
+
+#trybewarts-header-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .flex {
@@ -23,25 +47,34 @@
   height: 500px;
 }
 
-#input-name {
-  float: left;
+.form-container {
+  padding:100px;
+  background-color: rgb(212, 223, 223);
 }
 
-#input-last {
-  float: right;
+#input-name,
+#input-lastname,
+#input-email {
+  width: 480px;
 }
 
-.customiza-section {
+.form-floating{
+  margin-top: 15px;
+}
+
+#trybewarts-forms-logo {
+  margin: 300px;
+}
+
+footer {
+  background-color: black;
+  height: 150px;
+}
+
+footer h5 {
   display: flex;
-  flex-direction: row;
-}
-
-.familia {
-  display: flex;
-  flex-direction: column;
-}
-
-.avaliacao {
-  display: flex;
-  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding-top: 40px;
+  margin-bottom: 0;
 }

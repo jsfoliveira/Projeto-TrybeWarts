@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
     <title>Projeto Trybewarts</title>
 </head>
 
@@ -24,76 +25,111 @@
         </form>
     </header>
     <main class="flex">
-        <form id="evaluation-form" class="flex">
-            <section class="customiza-section">
-                <input type="text" name="nome" id="input-name" placeholder="Nome">
-                <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-            </section>
-            <section class="customiza-section">
-                <input type="email" name="email" id="input-email" placeholder="Email">
-                <select id="house">
-                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                </select>
-            </section>
-            <section class="familia">
-                <label for="family" id="label-family">Qual sua família?</label>
-                <input type="radio" name="family" value="Frontend" id="frontend">Frontend
-                <input type="radio" name="family" value="Backend" id="backend">Backend
-                <input type="radio" name="family" value="FullStack" id="fullstack">Fullstack
-            </section>
-            <label id="label-content">
-                Qual conteúdo você está com mais vontade de aprender?
+        <form id="evaluation-form" class="form-container">
+          <section class="form-floating mb-3">
+            <label for="input-name" >
+              <b>Nome</b>
+              <input type="text" name="nome" class="form-control" id="input-name">
             </label>
-            <label>HoFs
-                <input type='checkbox' value="HoFs">
+          </section>
+          <section class="form-floating">
+            <label for="input-lastname">
+              <b>Sobrenome</b>
+              <input type="text" name="sobrenome" id="input-lastname" class="form-control">
             </label>
-            <label>Jest
-                <input type='checkbox' value="Jest">
+          </section>
+          <section class="form-floating">
+            <label for="input-email">
+              <b>E-mail</b>
+              <input type="email" name="email" class="form-control" id="input-email">
             </label>
-            <label>Promises
-                <input type='checkbox' value="Promises">
-            </label>
-            <label>React
-                <input type='checkbox' value="React">
-            </label>
-            <label>SQL
-                <input type='checkbox' value="SQL">
-            </label>
-            <label>Python
-                <input type='checkbox' value="Python">
-            </label>
-            <section class="avaliacao">
-                <label id="label-rate">Como você avalia a Trybewarts?
-                </label>
-                <input type="radio" name="rate" value="1">1
-                <input type="radio" name="rate" value="2">2
-                <input type="radio" name="rate" value="3">3
-                <input type="radio" name="rate" value="4">4
-                <input type="radio" name="rate" value="5">5
-                <input type="radio" name="rate" value="6">6
-                <input type="radio" name="rate" value="7">7
-                <input type="radio" name="rate" value="8">8
-                <input type="radio" name="rate" value="9">9
-                <input type="radio" name="rate" value="10">10
-            </section>
-            <div>
-             <label for="textarea" class="textarea">Deixe seu comentário:</label>
-             <textarea id="textarea" name="textarea" cols="30" rows="10" maxlength="500"></textarea>
-            </div>
+          </section>
+
+          <section class="options-container">
+            <div  class="form-floating">
+              <b>Qual sua categoria?</b><br>
+              <select id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </div>
+
+          <div class="familia">
+            <label for="family" id="label-family">
+              <b>Qual sua família?</b><br>
+            <input type="radio" name="family" value="Frontend" id="frontend">Frontend
+            <input type="radio" name="family" value="Backend" id="backend">Backend
+            <input type="radio" name="family" value="FullStack" id="fullstack">Fullstack
+          </label>
+        </div>
+
+        <div>
+          <label id="label-content">
+            <b>Qual conteúdo você está com mais vontade de aprender?</b>
+        </label> <br>
+        <label>HoFs
+            <input type='checkbox' value="HoFs">
+        </label>
+        <label>Jest
+            <input type='checkbox' value="Jest">
+        </label>
+        <label>Promises
+            <input type='checkbox' value="Promises">
+        </label>
+        <label>React
+            <input type='checkbox' value="React">
+        </label>
+        <label>SQL
+            <input type='checkbox' value="SQL">
+        </label>
+        <label>Python
+            <input type='checkbox' value="Python">
+        </label>
+        </div>
+
+        <div  class="avaliacao">
+          <label id="label-rate">
+            <b>Como você avalia a Trybewarts?</b>
+            <br>
+            <input type="radio" name="rate" value="1">1
+            <input type="radio" name="rate" value="2">2
+            <input type="radio" name="rate" value="3">3
+            <input type="radio" name="rate" value="4">4
+            <input type="radio" name="rate" value="5">5
+            <input type="radio" name="rate" value="6">6
+            <input type="radio" name="rate" value="7">7
+            <input type="radio" name="rate" value="8">8
+            <input type="radio" name="rate" value="9">9
+            <input type="radio" name="rate" value="10">10
+          </label>
+        </div>
+        </section>
+              
+        <section class="form-floating">
+          <label for="textarea" class="textarea">
+            <b>Deixe seu comentário</b></label>
+          <textarea class="form-control" id="textarea" name="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        </section>
+
+        <section class="form-floating">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+            <input type="checkbox" name="agreement" id="agreement">
+        </label>
+        <button type="submit" class="btnEntrar" id="submit-btn" disabled>Enviar</button>
+        </section>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
-    <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-        <input type="checkbox" name="agreement" id="agreement">
-    </label>
-    <button type="submit" id="submit-btn" disabled>Enviar</button>
+    
     <footer>
         <h5>"Direitos reservados à Trybewarts©"</h5>
     </footer>
     <script src="script.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
+<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
 </body>
 
 </html>
