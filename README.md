@@ -58,7 +58,7 @@ Acrescente um formulário de login no canto direito da barra superior contendo o
 * Em todos os outro casos deverá ser emitido um alerta contendo o texto "Email ou senha inválidos."
 #### :footprints:Requisito 4
 Crie um título com o texto Trybewarts centralizado dentro do Header.
-* Deve existir um elemento <h1> com o id trybewarts-header-title e com o texto "Trybewarts"
+* Deve existir um elemento h1 com o id trybewarts-header-title e com o texto "Trybewarts"
 * O título deverá estar centralizado na barra verde
 * O header deve ter exatamente três elementos filhos
 * O filho do meio deve ser o título
