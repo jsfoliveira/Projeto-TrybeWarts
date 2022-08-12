@@ -63,7 +63,7 @@ Crie um título com o texto Trybewarts centralizado dentro do Header.
 * O header deve ter exatamente três elementos filhos
 * O filho do meio deve ser o título
 #### :footprints:Requisito 5
-Adicione um formulário no corpo da página.
+* Adicione um formulário no corpo da página.
 * Deve existir um formulário com o id evaluation-form
 * O formulário deve estar inserido dentro de uma tag main
 * Tanto o formulário quanto o main devem ser flex containers
