@@ -1,4 +1,4 @@
-# 	:woman_technologist: Project Todo List
+# 	:woman_technologist: Project Trybe Warts
 
 Esse projeto contém uma série de informações sobre o que eu aprendi aqui na Trybe ao longo do curso de desenvolvimento web da Trybe. <br>Nele pude desenvolver habilidades em CSS e Javascript, principalmente na parte de eventos em JS.
 
